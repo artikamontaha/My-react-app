@@ -8,52 +8,60 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>    
     <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
     </style>
 </head>
-<html class="min-h-screen">
-  <body class="min-h-screen w-full">
+<body class="min-h-screen w-full">
     <header class="w-full">
-      <nav class="w-full p-5 container mx-auto">
-        <div class="navbar bg-base-100">
-          <div class="navbar-start">
-            <a class="text-2xl font-bold">Tasty HUT</a>
-          </div>
-          <div class="navbar-end">
-            <a class="btn bg-[#FFC107]">Sign Up</a>
-          </div>
+        <nav class="w-full p-5 container mx-auto">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <a class="text-2xl font-bold">Tasty HUT</a>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn bg-[#FFC107]">Sign Up</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="w-full bg-cover bg-center relative h-[849px]" style="background-image: url('./images/banner_1.png');">
+            <div class="absolute inset-0 bg-black opacity-55"></div> 
+            <div class="relative z-10 items-center grid justify-center">
+                <h1 class="text-white md:text-7xl text-2xl pt-64 font-bold justify-center grid">Taste Our Delicious <br> <span class="flex justify-center">Best Foods</span></h1>
+                <p class="text-white pt-5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humou.</p>
+
+                <label class="input input-bordered flex items-center gap-2 justify-between w-full p-0 mt-5 py-8">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 16 16"
+                        fill="currentColor"
+                        class="h-8 w-8 opacity-70 m-3">
+                        <path
+                            fill-rule="evenodd"
+                            d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                            clip-rule="evenodd" />
+                    </svg>
+                
+                    <input class="text-black text-2xl flex-grow p-0 m-0" type="text" placeholder="Search any food" />
+                    <button class="btn px-8 py-4 text-black font-bold bg-[#FFC107] flex items-center justify-center h-16">
+                        Search
+                    </button>
+                </label>
+            </div>
         </div>
-      </nav>
+    </header>
 
-      <div class="w-full bg-cover bg-center relative h-[849px]" style="background-image: url('./images/banner_1.png');">
-        <div class="absolute inset-0 bg-black opacity-55"></div> 
-        <div class="relative z-10  items-center grid justify-center"><h1 class="text-white md:text-7xl text-2xl pt-28 font-bold justify-center grid">Taste Our Delicious <br> <span class="flex justify-center">Best Foods</span></h1>
-        <p class="text-white pt-5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humou.</p>
+    <main class="pt-20 mb-52 container mx-auto">
+        <div class="font-bold text-5xl text-white flex justify-center">
+            <h1>Your Favourite Food</h1>
+        </div>
+        <div id="categoriesContainer" class=" grid grid-cols-2 "></div>
+      </main>
 
-        <label class="input input-bordered flex items-center gap-2 justify-between w-full p-0 mt-5 py-8">
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 16 16"
-                fill="currentColor"
-                class="h-8 w-8 opacity-70 m-3">
-                <path
-                    fill-rule="evenodd"
-                    d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
-                    clip-rule="evenodd" />
-            </svg>
-        
-            <input class="text-black text-2xl flex-grow p-0 m-0" type="text" placeholder="Search any food" />
-            <button class="btn px-8 py-4 text-black font-bold bg-[#FFC107] flex items-center justify-center h-16">
-                Search
-            </button>
-</label>
-                      </div>
-          </header>
-  </body>
-</html>
+          <script src="./js/scrift.js"></script>
+        </body>
 </html>
